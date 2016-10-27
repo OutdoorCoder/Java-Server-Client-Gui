@@ -32,6 +32,8 @@ import java.util.ArrayList;
           int in = sc.nextInt();     
           
           ServerSocket listener = new ServerSocket(in);
+          InetAddress IP=InetAddress.getLocalHost();
+          System.out.println(IP.getHostAddress());
           Socket client;
           
           while(true){
